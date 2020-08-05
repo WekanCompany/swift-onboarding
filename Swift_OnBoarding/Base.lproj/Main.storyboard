@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,7 +41,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nB-8J-nfp">
-                                                    <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                                    <rect key="frame" x="67.5" y="200.5" width="240" height="266"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_one" translatesAutoresizingMaskIntoConstraints="NO" id="XqB-Ya-fZZ">
                                                             <rect key="frame" x="13" y="0.0" width="214" height="186"/>
@@ -50,11 +50,15 @@
                                                                 <constraint firstAttribute="height" constant="186" id="wYd-XH-h8a"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loads to keep you busy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjj-cB-O3s">
-                                                            <rect key="frame" x="43.5" y="220" width="153.5" height="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjj-cB-O3s">
+                                                            <rect key="frame" x="-12.5" y="186" width="265.5" height="80"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="20" id="6Ri-UB-rAB"/>
+                                                                <constraint firstAttribute="height" constant="80" id="xeg-mH-Xov"/>
                                                             </constraints>
+                                                            <string key="text">If soap and water are not available, use an
+alcohol-based hand sanitizer that contains
+at least 60% alcohol, and wash with soap
+and water as soon as you can.</string>
                                                             <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -63,9 +67,10 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="Hjj-cB-O3s" secondAttribute="bottom" id="FAI-Pq-hJ2"/>
-                                                        <constraint firstAttribute="height" constant="240" id="G2y-pl-dwI"/>
+                                                        <constraint firstAttribute="height" constant="266" id="G2y-pl-dwI"/>
                                                         <constraint firstItem="Hjj-cB-O3s" firstAttribute="centerX" secondItem="6nB-8J-nfp" secondAttribute="centerX" id="QUk-Hn-dRq"/>
                                                         <constraint firstAttribute="width" constant="240" id="jb1-V9-jVA"/>
+                                                        <constraint firstItem="Hjj-cB-O3s" firstAttribute="top" secondItem="XqB-Ya-fZZ" secondAttribute="bottom" id="rdT-qr-Jdb"/>
                                                         <constraint firstItem="XqB-Ya-fZZ" firstAttribute="top" secondItem="6nB-8J-nfp" secondAttribute="top" id="z7x-Ke-zKt"/>
                                                         <constraint firstItem="XqB-Ya-fZZ" firstAttribute="centerX" secondItem="6nB-8J-nfp" secondAttribute="centerX" id="zdW-lp-8Tf"/>
                                                     </constraints>
@@ -85,7 +90,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKN-8T-PGr">
-                                                    <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                                    <rect key="frame" x="67.5" y="206.5" width="240" height="254"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_two" translatesAutoresizingMaskIntoConstraints="NO" id="MJo-F3-Ggf">
                                                             <rect key="frame" x="13" y="0.0" width="214" height="170"/>
@@ -94,11 +99,16 @@
                                                                 <constraint firstAttribute="width" constant="214" id="fCG-Cf-A0d"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Top dollar for our drivers." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ely-zy-JBO">
-                                                            <rect key="frame" x="41.5" y="220" width="157" height="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ely-zy-JBO">
+                                                            <rect key="frame" x="-41" y="170" width="322.5" height="84"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="20" id="0rJ-Mc-JMF"/>
+                                                                <constraint firstAttribute="height" constant="84" id="0rJ-Mc-JMF"/>
                                                             </constraints>
+                                                            <string key="text"> Do NOT use hand sanitizer if your hands are visibly
+dirty or greasy: for example, after gardening,
+playing outdoors, or after fishing or camping
+(unless a handwashing station is not available).
+Wash your hands with soap and water instead.</string>
                                                             <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -109,9 +119,10 @@
                                                         <constraint firstAttribute="width" constant="240" id="6ld-bF-g8G"/>
                                                         <constraint firstAttribute="bottom" secondItem="Ely-zy-JBO" secondAttribute="bottom" id="InT-RZ-CDr"/>
                                                         <constraint firstItem="Ely-zy-JBO" firstAttribute="centerX" secondItem="hKN-8T-PGr" secondAttribute="centerX" id="Nqm-P7-Ngc"/>
-                                                        <constraint firstAttribute="height" constant="240" id="Pnb-WX-x4o"/>
+                                                        <constraint firstAttribute="height" constant="254" id="Pnb-WX-x4o"/>
                                                         <constraint firstItem="MJo-F3-Ggf" firstAttribute="centerX" secondItem="hKN-8T-PGr" secondAttribute="centerX" id="VNC-A3-sLZ"/>
                                                         <constraint firstItem="MJo-F3-Ggf" firstAttribute="top" secondItem="hKN-8T-PGr" secondAttribute="top" id="hKR-5V-l5I"/>
+                                                        <constraint firstItem="Ely-zy-JBO" firstAttribute="top" secondItem="MJo-F3-Ggf" secondAttribute="bottom" id="iMh-Mx-4oJ"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -128,21 +139,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-gC-B7j">
-                                                    <rect key="frame" x="27.5" y="213.5" width="320" height="240"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-gC-B7j">
+                                                    <rect key="frame" x="27.5" y="207" width="320" height="253"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_three" translatesAutoresizingMaskIntoConstraints="NO" id="6MZ-jw-cre">
-                                                            <rect key="frame" x="45" y="0.0" width="230.00000000000006" height="163"/>
+                                                            <rect key="frame" x="45" y="0.0" width="230" height="163"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="230" id="DGv-xJ-HA2"/>
                                                                 <constraint firstAttribute="height" constant="163" id="XnT-gV-uHn"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="No more waiting, Immediate payments." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4w-jR-RKu">
-                                                            <rect key="frame" x="37.5" y="220" width="245" height="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="99" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4w-jR-RKu">
+                                                            <rect key="frame" x="0.0" y="163" width="320" height="90"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="20" id="qBG-hP-Gt5"/>
+                                                                <constraint firstAttribute="height" constant="90" id="qBG-hP-Gt5"/>
                                                             </constraints>
+                                                            <string key="text">Self-isolation is when a person who is experiencing fever, cough or other COVID-19 symptoms stays at home and does not go to work, school or public places. This can be voluntarily or based on his/her health care provider’s recommendation</string>
                                                             <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -150,10 +162,13 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstItem="k4w-jR-RKu" firstAttribute="leading" secondItem="eQz-gC-B7j" secondAttribute="leading" id="03n-qX-8pm"/>
                                                         <constraint firstItem="6MZ-jw-cre" firstAttribute="top" secondItem="eQz-gC-B7j" secondAttribute="top" id="59r-VG-CjY"/>
-                                                        <constraint firstAttribute="height" constant="240" id="ATH-Vp-hyV"/>
+                                                        <constraint firstAttribute="height" constant="253" id="ATH-Vp-hyV"/>
                                                         <constraint firstItem="6MZ-jw-cre" firstAttribute="centerX" secondItem="eQz-gC-B7j" secondAttribute="centerX" id="Ehz-dY-Zsp"/>
                                                         <constraint firstAttribute="width" constant="320" id="IaO-Ye-fb4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="k4w-jR-RKu" secondAttribute="trailing" id="LIL-Cq-s5b"/>
+                                                        <constraint firstItem="k4w-jR-RKu" firstAttribute="top" secondItem="6MZ-jw-cre" secondAttribute="bottom" id="WQ9-bz-wba"/>
                                                         <constraint firstItem="k4w-jR-RKu" firstAttribute="centerX" secondItem="eQz-gC-B7j" secondAttribute="centerX" id="hiW-EL-bIR"/>
                                                         <constraint firstAttribute="bottom" secondItem="k4w-jR-RKu" secondAttribute="bottom" id="jwN-8Z-PrJ"/>
                                                     </constraints>
@@ -188,7 +203,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="14"/>
                                 <state key="normal" title="Skip">
-                                    <color key="titleColor" red="0.94509803920000002" green="0.48627450979999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="skipAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6R-i0-YgG"/>
@@ -204,14 +219,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="14"/>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.94509803920000002" green="0.48627450979999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLv-CA-Kh8"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.070588235294117646" green="0.12941176470588234" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.2786745287903894" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="83G-c4-mV6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1R8-Xz-AU5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="92A-7P-Dza" secondAttribute="bottom" constant="50" id="Q2t-l1-d3S"/>
@@ -235,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="23" y="132"/>
+            <point key="canvasLocation" x="21.600000000000001" y="131.78410794602701"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Fpf-cv-le9">
@@ -254,8 +269,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="onboarding_one" width="213" height="186"/>
-        <image name="onboarding_three" width="214" height="153"/>
-        <image name="onboarding_two" width="213" height="170"/>
+        <image name="onboarding_one" width="170" height="170"/>
+        <image name="onboarding_three" width="170" height="170"/>
+        <image name="onboarding_two" width="170" height="170"/>
     </resources>
 </document>
